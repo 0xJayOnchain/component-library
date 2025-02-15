@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://0xJayOnchain.github.io/component-library/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "sass": "sass --watch ./src/style.scss ./src/style.css"
+    "sass": "sass --watch ./src/style.scss ./src/style.css",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -39,6 +42,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-storybook": "^0.11.3",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "prop-types": "^15.8.1",
     "storybook": "^8.5.6",
