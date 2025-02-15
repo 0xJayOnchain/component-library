@@ -11,9 +11,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "sass": "sass --watch ./src/style.scss ./src/style.css",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "sass": "sass --watch ./src/style.scss ./src/style.css"
   },
   "dependencies": {
     "react": "^19.0.0",
