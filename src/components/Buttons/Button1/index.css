@@ -1,0 +1,26 @@
+@import url('../../../style.css');
+
+#button1 {
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: radial-gradient(from 50% 60%, white, #f6f6f6);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 -6px 10px rgba(255, 255, 255, 0.6);
+}
+#button1:not(:last-child) {
+  margin-right: 20px;
+}
+#button1.button-style1 {
+  transition: background-color 0.2s ease;
+}
+#button1:hover {
+  cursor: pointer;
+}
+#button1:hover.button-style1 {
+  background-color: var(--primary-color3);
+}

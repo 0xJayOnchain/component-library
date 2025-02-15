@@ -6,6 +6,9 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@storybook/addon-links",
+    "@storybook/preset-scss",
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: "@storybook/react-vite",
