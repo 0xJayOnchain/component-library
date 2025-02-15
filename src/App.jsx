@@ -17,7 +17,7 @@ function App() {
         <h1>Component Library Collection</h1>
         <p>This is a component library with animations built using pure CSS</p>
         <div className='storybook-link'>
-        <a href="Chromatic Link Here" target="_blank">View Storybook(Coming Soon)</a>
+        <a href="https://67b0c5e84ffe34d0faacbdb6-dcfvyqookh.chromatic.com/" target="_blank">View Components</a>
         </div>
         <div className='social-icons'>
           <XIcon

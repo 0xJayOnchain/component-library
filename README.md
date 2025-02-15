@@ -1,5 +1,5 @@
-This is a component library built with pure CSS with accessibility in mind.
+This is a component library built with pure CSS and with accessibility in mind.
 
-Storybook Link: Coming Soon
+Homepage: https://0xjayonchain.github.io/component-library/
 
-Homepage: Coming Soon
+View Components: https://67b0c5e84ffe34d0faacbdb6-dcfvyqookh.chromatic.com/
