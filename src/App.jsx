@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import XIcon from './assets/xIcon'
+import GithubIcon from './assets/githubIcon'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const navigateToSocial = (social) => {
+    const socialMapping = {
+      X: 'https://x.com/0xJayOnchain',
+      github: 'https://github.com/0xJayOnchain/component-library',
+    }
+    window.open(socialMapping[social], '_blank', 'noopener,noreferrer');
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='home-page'>
+        <h1>Component Library Collection</h1>
+        <p>This is a component library with animations built using pure CSS</p>
+        <div className='storybook-link'>
+        <a href="Chromatic Link Here" target="_blank">View Storybook(Coming Soon)</a>
+        </div>
+        <div className='social-icons'>
+          <XIcon
+          navigationFunction={navigateToSocial}/>
+          <GithubIcon 
+          navigationFunction={navigateToSocial}/>
+        </div>
+        {/* <ButtonList /> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
