@@ -1,0 +1,38 @@
+@import url('../../../style.css');
+
+#button2 {
+  position: relative;
+  border-color: var(--primary-color2);
+  background-color: var(--primary-color2);
+  color: var(--text-color);
+}
+#button2:before, #button2:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+  background-color: var(--primary-color2);
+  color: var(--text-color);
+}
+#button2:before{
+  width: 60px;
+  background: var(--primary-color2);
+  transform: translateX(-130px) skewX(-45deg);
+}
+#button2:after{
+  width: 30px;
+  background: var(--primary-color3);
+  transform: translateX(-130px) skewX(-45deg);
+}
+#button2:hover:before,
+#button2:hover:after{
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+#button2:hover{
+  color: var(--primary-color2);
+  background: var(--primary-color3);
+}

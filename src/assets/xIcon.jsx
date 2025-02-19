@@ -6,7 +6,7 @@ export default function XIcon({ navigationFunction }) {
   return (
     <svg onMouseEnter={() => {setUpdateXHover('#26a7de')}}
     onMouseLeave={() => {setUpdateXHover('#000')}}
-    onClick={() => {navigationFunction && navigationFunction('x')}}
+    onClick={() => {navigationFunction && navigationFunction('X')}}
     fill={updateXHover}
     xmlns="http://www.w3.org/2000/svg"  
     viewBox="0 0 50 50" 
