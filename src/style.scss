@@ -1,10 +1,9 @@
 :root {
-    --primary-color1: #ddd;
-    --primary-color2: #919191;
-    --primary-color3: #b7b7b7;
-    --primary-accent: #B8B42D;
-    --primary-dark: #5A5A5A;
-    --primary-blue: #014CEC;
+    --primary-color1: #DCE4C9;
+    --primary-color2: #F5F5DC;
+    --primary-color3: #B6A28E;
+    --primary-accent: #E07B39;
+    --primary-dark: #000;
 }
 
 .home-page {
@@ -56,6 +55,8 @@
   .home-page .storybook-link {
     padding-top: 10px;
     padding-bottom: 20px;
+    width: fit-content;
+    margin: auto;
   }
   .home-page .storybook-link:hover {
     animation: rubberBand 1s;

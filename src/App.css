@@ -6,4 +6,9 @@ body {
     max-width: 100%;
     width: 800px;
     margin: auto;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
